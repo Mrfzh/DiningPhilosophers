@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="设置结束时间："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/et_main_finish_time"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/tv_main_finish_time"
+        android:maxLength="2"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/btn_main_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_main_finish_time"
+        android:text="开始运行" />
+
+    <Button
+        android:id="@+id/btn_main_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_main_start"
+        android:text="提前结束"/>
+
+    <TextView
+        android:id="@+id/tv_main_curr_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="当前时刻："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/btn_main_finish"/>
+
+    <TextView
+        android:id="@+id/tv_main_curr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="尚未开始"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_curr_time_text"
+        android:layout_below="@id/btn_main_finish"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="哲学家 1："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_main_curr_time_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_p_1_text"
+        android:layout_below="@id/tv_main_curr_time_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="哲学家 2："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_main_p_1_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_p_2_text"
+        android:layout_below="@id/tv_main_p_1_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="哲学家 3："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_main_p_2_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_p_3_text"
+        android:layout_below="@id/tv_main_p_2_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_4_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="哲学家 4："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_main_p_3_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_p_4_text"
+        android:layout_below="@id/tv_main_p_3_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_5_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="哲学家 5："
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_main_p_4_text"/>
+
+    <TextView
+        android:id="@+id/tv_main_p_5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/tv_main_p_5_text"
+        android:layout_below="@id/tv_main_p_4_text"/>
+
+</RelativeLayout>
